@@ -1,0 +1,101 @@
+/* Tổng thể trang */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2f3b; /* Màu nền tối */
+    color: #fff; /* Màu chữ sáng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #ff5733; /* Màu đỏ cam */
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form */
+form {
+    background-color: #333; /* Màu nền tối cho form */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa mọi phần tử trong form */
+    justify-content: center;
+}
+
+/* Textarea - khung nhập văn bản */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ff5733; /* Đường viền màu đỏ cam */
+    border-radius: 8px;
+    background-color: #444; /* Màu nền tối */
+    color: #fff; /* Màu chữ sáng */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    text-align: center; /* Căn giữa văn bản nhập vào */
+}
+
+/* Khi người dùng nhập vào, hiệu ứng thay đổi border */
+textarea:focus {
+    border-color: #ffae00; /* Chuyển sang màu vàng khi focus */
+    background-color: #555; /* Màu nền sáng hơn khi focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 174, 0, 0.5);
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ff5733; /* Màu đỏ cam */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 200px; /* Giới hạn chiều rộng nút */
+    margin-top: 10px;
+}
+
+/* Hiệu ứng hover cho button */
+button:hover {
+    background-color: #ffae00; /* Màu vàng khi hover */
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng khi nhấn button */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Thêm hiệu ứng loading (nếu cần thêm sau) */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Định dạng cho phần tử khi người dùng nhập vào */
+input, textarea {
+    transition: all 0.3s ease;
+}

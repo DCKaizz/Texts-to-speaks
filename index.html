@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Văn Bản Thành Giọng Nói</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chuyển Văn Bản Thành Giọng Nói (Tiếng Việt)</h1>
+        <form action="/generate" method="POST">
+            <textarea name="text" placeholder="Nhập văn bản ở đây..." required></textarea><br><br>
+            <button type="submit">Chuyển Đổi</button>
+        </form>
+    </div>
+</body>
+</html>
